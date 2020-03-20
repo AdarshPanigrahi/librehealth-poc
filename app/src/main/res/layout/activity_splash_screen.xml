@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".SplashScreen">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFFFF">
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="48dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@android:dimen/notification_large_icon_height"
+            app:srcCompat="@drawable/librelogo" />
+
+        <TextView
+            android:id="@+id/librelogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_toEndOf="@+id/imageView3"
+            android:fontFamily="@font/andada"
+            android:text="@string/libre"
+            android:textColor="#323232"
+            android:textSize="36dp"></TextView>
+
+        <TextView
+            android:id="@+id/healthlogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/librelogo"
+            android:fontFamily="@font/andada"
+            android:text="@string/health"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#323232"
+            android:textSize="36dp"
+            android:textStyle="bold">
+
+        </TextView>
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
